@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
 import LogoImage from '../assets/images/logo-noBg.png';
-import InfoImage from '../assets/images/underwater.jpg';
+import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+
 export default function Home() {
   return (
     <>
@@ -45,13 +46,13 @@ export default function Home() {
 
         <div className="social">
           <a href="#" target="">
-            <i className="fab fa-twitter fa-3x"></i>
+            <FaTwitter />
           </a>
           <a href="#" target="">
-            <i className="fab fa-facebook fa-3x"></i>
+            <FaFacebook />
           </a>
           <a href="#" target="">
-            <i className="fab fa-instagram fa-3x"></i>
+            <FaInstagram />
           </a>
         </div>
       </section>
