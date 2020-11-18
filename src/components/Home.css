@@ -63,19 +63,22 @@ h1 {
 }
 
 .content {
-  text-align: center;
-  margin-top: 5px;
-  margin-left: 7px;
+  width: 15em;
+  margin-top: 10%;
   font-size: 1.2em;
   z-index: 2;
 }
 
+.content h3 {
+  text-align: center;
+}
+
 .content img {
-  width: 35%;
+  width: 15em;
   height: auto;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 10px 30px;
   background: var(--primary-color);
@@ -88,6 +91,21 @@ h1 {
 
 .btn:hover {
   transform: scale(0.98);
+} */
+
+#vision {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container {
+}
+
+.image-container img {
+  max-width: 800px;
+}
+
+.infoText-container {
+  max-width: 300px;
 }
 
 #about {

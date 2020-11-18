@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import LogoImage from '../assets/images/logo-noBg.png';
+import InfoImage from '../assets/images/underwater.jpg';
 export default function Home() {
   return (
     <>
@@ -16,9 +17,19 @@ export default function Home() {
         <div className="content">
           <img src={LogoImage} alt="logo" />
           <h3>The future is here</h3>
-          <a href="#about" className="btn">
-            More Info
-          </a>
+        </div>
+      </section>
+
+      <section id="vision">
+        <div className="image-container">
+          <img src={InfoImage} alt="underWater" />
+        </div>
+        <div className="infoText-container">
+          <h3>Our Vision</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            suscipit quod adipisci iure consectetur! Ducimus.
+          </p>
         </div>
       </section>
 
