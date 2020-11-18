@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css';
-
+import LogoImage from '../assets/images/logo-noBg.png';
 export default function Home() {
   return (
-    <div>
+    <>
       <section className="showcase">
         <div className="video-container">
           <video
@@ -14,7 +14,7 @@ export default function Home() {
           ></video>
         </div>
         <div className="content">
-          <h1>Level-Hydrofoils</h1>
+          <img src={LogoImage} alt="logo" />
           <h3>The future is here</h3>
           <a href="#about" className="btn">
             More Info
@@ -42,20 +42,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-
-      {/* <div className="video-background">
-        <div className="video-foreground">
-          <iframe
-            title="bgVideo"
-            src="https://www.youtube.com/embed/i9yCe6ibhzU?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=i9yCe6ibhzU"
-            allow="autoplay; encrypted-media"
-            frameBorder="0"
-            width="100vw"
-            height="100vh"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div> */}
-    </div>
+    </>
   );
 }
