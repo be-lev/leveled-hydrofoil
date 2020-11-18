@@ -22,13 +22,15 @@ export default function Home() {
 
       <section id="vision">
         <div className="image-container">
-          <img src={InfoImage} alt="underWater" />
+          <p>Easy and Safe</p>
         </div>
         <div className="infoText-container">
-          <h3>Our Vision</h3>
+          <h2>Our Vision</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            suscipit quod adipisci iure consectetur! Ducimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            ab ex minima sed commodi! Optio amet ex ratione numquam quidem quo
+            cum eligendi! Repellendus sequi delectus doloribus cumque, quae
+            vero.
           </p>
         </div>
       </section>
