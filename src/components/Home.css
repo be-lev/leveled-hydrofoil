@@ -63,7 +63,7 @@ h1 {
 }
 
 .content {
-  width: 15em;
+  width: 20em;
   margin-top: 10%;
   font-size: 1.2em;
   z-index: 2;
@@ -76,6 +76,7 @@ h1 {
 .content img {
   width: 15em;
   height: auto;
+  margin-bottom: 30px;
 }
 
 #vision {
@@ -128,4 +129,3 @@ h1 {
   color: #57cbf6;
   margin: 0 5px;
 }
-

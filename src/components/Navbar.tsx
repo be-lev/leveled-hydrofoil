@@ -6,11 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Logo from '../assets/images/logo-noBg.png';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      backgroundColor: 'transparent',
       flexGrow: 1,
+      zIndex: 10,
+      position: 'fixed',
+      width: '100%',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -25,23 +30,25 @@ export default function Navbar() {
   const classes = useStyles();
 
   return (
-    <div className={`${classes.root} navbar`}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <AppBar position="static" className={`${classes.root}`}>
+      <Toolbar>
+        <Typography variant="h6" className={classes.title}>
+          <img src={Logo} alt="logo" width="80px" />
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          Technology
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          Products
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          About
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          Contact
+        </Typography>
+        <Button color="inherit">Login</Button>
+      </Toolbar>
+    </AppBar>
   );
 }
