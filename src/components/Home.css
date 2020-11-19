@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #3a4052;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.showcase {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color) no-repeat center center/cover;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.content {
+  width: 15em;
+  margin-top: 10%;
+  font-size: 1.2em;
+  z-index: 2;
+}
+
+.content h3 {
+  text-align: center;
+}
+
+.content img {
+  width: 15em;
+  height: auto;
+}
+
+#vision {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+.image-container {
+  width: 50%;
+  background-image: url('../assets/images/underwater.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5em;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.infoText-container {
+  width: 50%;
+  padding: 20px;
+}
+
+#about {
+  background-color: #232323;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#about h2 {
+  margin: 30px 0;
+  color: #57cbf6;
+}
+
+.social a {
+  color: #57cbf6;
+  margin: 0 5px;
+}
+
