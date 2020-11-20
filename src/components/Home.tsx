@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="content">
           <img src={LogoImage} alt="logo" />
-          <h3>The future is here</h3>
+          <h3>World First stabilized Hydrofoil</h3>
         </div>
       </section>
 
